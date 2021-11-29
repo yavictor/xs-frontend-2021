@@ -1,0 +1,26 @@
+.FormAuth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.FormAuth-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 409px;
+}
+
+.FormAuth-button {
+    height: 48px;
+    background: #24ABAB;
+    border-radius: 8px;
+    border-color: transparent;
+    padding: 10px 24px;
+    color: white;
+    font: inherit;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 75px;
+}
