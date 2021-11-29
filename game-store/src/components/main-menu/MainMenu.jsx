@@ -7,13 +7,15 @@ const MainMenu = () => {
 
   return (
     <>
-      <span className="MainMenu">
-        {menuItems.map((item) => (
-          <button key={item} className="MainMenu-button">
-            {item}
-          </button>
-        ))}
-      </span>
+      <nav className="MainMenu">
+        <ul className="MainMenu-list">
+          {menuItems.map((item) => (
+            <li key={item} className="MainMenu-button">
+              {item}
+            </li>
+          ))}
+        </ul>
+      </nav>
     </>
   )
 };

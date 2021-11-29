@@ -1,0 +1,56 @@
+.Home {
+    background: #062225;
+    height: fit-content;
+    font: inherit;
+}
+
+.Home-background {
+    display: flex;
+    min-height: 777px;
+
+    background-image: url("../../assets/images/background-home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Home-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    margin-left: 60px;
+}
+
+.Home-button-login {
+    font: inherit;
+    font-weight: 900;
+    background: #24ABAB;
+    color: #FFF9F6;
+    border: 3px solid #24ABAB;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin-right: 16px;
+    width: 156px;
+    cursor: pointer;
+}
+
+.Home-button-catalog {
+    font: inherit;
+    font-weight: 900;
+    background: transparent;
+    color: #24ABAB;
+    border: 3px solid #24ABAB;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin-right: 16px;
+    width: 156px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+    line-height: 27px;
+    color: white;
+    max-width: 550px;
+    margin: 0 0 91px;
+}

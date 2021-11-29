@@ -1,0 +1,17 @@
+.Auth {
+    background: #062225;
+    min-height: 777px;
+}
+
+img {
+    width: 48px;
+    height: 40px;
+    margin-top: 46px;
+    margin-left: 50px;
+    margin-bottom: 76px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align-last: center;
+}
