@@ -7,8 +7,8 @@ const HomeScreen = () => {
     <div className="Home">
       <div className="Home-background">
         <div className="Home-container">
-          <Title>Buy games in one click</Title>
-          <p>A store that is twice as fast, convenient and safer to buy your favorite games and entertainment for the whole family</p>
+          <Title>Add Rick<br/> to your team</Title>
+          <p>Or Morty or someone you want</p>
           <span>
           <button className="Home-button-login">
             Login
