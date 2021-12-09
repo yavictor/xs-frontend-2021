@@ -1,6 +1,5 @@
 import React from 'react';
-
-import './Properties.css'
+import styled from 'styled-components';
 
 const Properties = ({props}) => {
   const defaultInfo = [
@@ -9,13 +8,32 @@ const Properties = ({props}) => {
     {name:'Status', value: props.status},
   ];
 
+  const Property = styled.tr`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  `;
+
+  const PropertyName = styled.td`
+    font-size: 18px;
+    line-height: 27px;
+    width: 78px;
+    color: rgba(6, 34, 37, 0.5);
+  `;
+
+  const PropertyValue = styled.td`
+    font-size: 18px;
+    line-height: 27px;
+    color: #062225;
+  `;
+
   return (
     <table>
       {defaultInfo.map((item) => (
-        <tr className="Property">
-          <td className="Property-name">{item.name}</td>
-          <td className="Property-value">{item.value || '-'}</td>
-        </tr>
+        <Property>
+          <PropertyName>{item.name}</PropertyName>
+          <PropertyValue>{item.value || '-'}</PropertyValue>
+        </Property>
       ))}
     </table>
   )
