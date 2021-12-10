@@ -3,6 +3,16 @@ import Card from '../../components/card/Card';
 import { gql, useQuery } from '@apollo/client';
 import styled from 'styled-components';
 
+const CatalogWrapper = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+gap: 32px 40px;
+background: #e5e5e5;
+padding: 40px 60px;
+`;
+
 const CatalogScreen = () => {
   const query = gql`
     query ExampleQuery {
@@ -35,23 +45,13 @@ const CatalogScreen = () => {
     return <p>Error: {error}</p>;
   }
 
-  const Catalog = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px 40px;
-    background: #e5e5e5;
-    padding: 40px 60px;
-  `;
-
   return (
     <>
-      <Catalog>
+      <CatalogWrapper>
         {cards.map((card) => (
           <Card key={card.id} props={card} />
         ))}
-      </Catalog>
+      </CatalogWrapper>
     </>
   );
 };
